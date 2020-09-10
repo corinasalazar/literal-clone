@@ -1,12 +1,20 @@
 /* Global & Text */
 
+:root {
+    --dark-color: #000;
+    --main-color: #444340;
+    --light-color: #b3b3b3;
+    --white-color: #FFF;
+  }
+
 body{
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color:#444340;
+    color: var(--main-color);
     font-weight: 400;
+    letter-spacing: 0.006em;
 }
 
 h1, h2, h3, h4{
@@ -17,9 +25,99 @@ h1{
     font-family: 'Libre Baskerville', serif;
 }
 
+a{
+    text-decoration: none;
+}
 
+ul li{
+    list-style-type: none;
+}
 
 
 
 /* Header */
 
+header .container{
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.left{
+    display: flex;
+}
+
+nav ul{
+    display: inline-block;
+    margin: 5px 0 0 0;
+    padding-left: 0;
+}
+
+nav ul li{
+    float: left;
+    margin-left: 35px;
+}
+
+header a{
+    color: var(--light-color);
+    font-size: 14px;
+}
+
+.button{
+    padding: 12px 20px;
+    border: 2px solid var(--dark-color);
+    border-radius: 2px;
+    margin-left: 10px;
+    color: var(--dark-color);
+    position: relative;
+}
+
+.button span{
+    background-color: var(--light-color);
+    color: var(--white-color);
+    font-size: 12px;
+    padding: 2px 7px;
+    border-radius: 2px;
+    position: absolute;
+    right: -10px;
+    bottom: -15px;
+    transform: rotate(-3deg);
+}
+
+.button svg{
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}
+
+.button.primary{
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding-right: 50px;
+}
+
+
+/* Content Sections */
+
+main {
+
+}
+
+.cta-section{
+    background-color: #F5F5F5;
+}
+.content-chunk, hr{
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+
+
+
+footer{
+    max-width: 75%;
+    margin: 0 auto;
+}
