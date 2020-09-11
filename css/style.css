@@ -13,7 +13,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     color: var(--main-color);
-    font-weight: 400;
+    font-weight: thin;
     letter-spacing: 0.006em;
 }
 
@@ -24,6 +24,7 @@ h1, h2, h3, h4{
 h1{
     font-family: 'Libre Baskerville', serif;
     font-size: 25px;
+    color: var(--dark-color);
 }
 
 h2{
@@ -133,6 +134,10 @@ header a{
     padding: 80px 0;
 }
 
+.content-chunk.top{
+    padding-top: 150px;
+}
+
 .content-chunk ul{
     padding-left: 40px;
 }
@@ -177,4 +182,9 @@ footer{
 .col-3{
     width:32%;
     float: left;
+}
+
+footer a{
+    color: var(--main-color);
+    text-decoration: underline;
 }
